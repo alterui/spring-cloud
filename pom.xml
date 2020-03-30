@@ -6,8 +6,13 @@
 
     <groupId>com.lr</groupId>
     <artifactId>spring-cloud</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+    <!-- 子模块 -->
+    <modules>
+        <module>cloud-provider-payment8001</module>
+    </modules>
 
 
     <!-- 统一管理jar包版本 -->
