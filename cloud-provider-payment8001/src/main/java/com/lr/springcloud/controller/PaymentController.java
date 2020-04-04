@@ -29,6 +29,12 @@ public class PaymentController {
         return new CommonResult<>(200, "获取payment成功", payment);
     }
 
+    @GetMapping("/hi")
+    public String get() {
+
+        return "hello123";
+    }
+
     @PostMapping("/payment/create")
     public CommonResult<Integer> create(Payment payment) {
         Integer integer = paymentService.create(payment);
