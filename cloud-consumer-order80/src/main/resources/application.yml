@@ -1,0 +1,9 @@
+# 设置访问的端口号
+server:
+  port: 80
+
+# 添加配置延迟devtools等待时间
+spring:
+  devtools:
+    restart:
+      poll-interval: 5000
