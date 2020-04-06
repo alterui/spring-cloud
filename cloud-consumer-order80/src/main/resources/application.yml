@@ -7,3 +7,16 @@ spring:
   devtools:
     restart:
       poll-interval: 5000
+
+
+  application:
+    name: cloud-consumer-order
+
+# 配置eureka
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+
