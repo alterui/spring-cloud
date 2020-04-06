@@ -22,7 +22,7 @@ public class Order80Controller {
     @Resource
     private RestTemplate restTemplate;
 
-    private static final String URL = "http://localhost:8001/";
+    private static final String URL = "http://CLOUD-PROVIDER-PAYMENT/";
 
     @GetMapping("/payment/{id}")
     public CommonResult<Payment> getPaymentById(@PathVariable("id") Long id) {

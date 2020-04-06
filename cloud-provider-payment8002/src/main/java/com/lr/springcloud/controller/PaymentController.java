@@ -24,10 +24,10 @@ public class PaymentController {
 
     @GetMapping("/payment/{id}")
     public CommonResult<Payment> getPaymentById(@PathVariable("id") Long id) {
-        //System.out.println(id);
+        System.out.println(id);
         Payment payment = paymentService.getPaymentById(id);
 
-        return new CommonResult<>(200, "获取payment成功,port:"+port, payment);
+        return new CommonResult<>(200, "获取payment成功,端口号为："+port, payment);
     }
 
     @GetMapping("/hi")

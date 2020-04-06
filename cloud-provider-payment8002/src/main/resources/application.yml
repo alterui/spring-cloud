@@ -1,6 +1,6 @@
-# 端口号
 server:
-  port: 8001
+  port: 8002
+
 
 spring:
   # 应用名
@@ -36,12 +36,9 @@ mybatis:
 
 # eureka
 
-
-
 eureka:
   client:
-    register-with-eureka: true # 将自己注册到eureka服务中心上去
-    fetch-registry: true # 寻找服务
+    fetch-registry: true
+    register-with-eureka: true
     service-url:
       defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka
-      # defaultZone: http://localhost:7001/eureka/  # 服务中心地址
